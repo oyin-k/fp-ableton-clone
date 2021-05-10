@@ -5,36 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn more about Ableton - maker of Live and Push | Ableton</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- Reset Css -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
+
   <body>
     <header class="nav">
       <nav class="nav-main">
         <div class="nav-main__links-container">
-          <img src="assets/logomark.svg" alt="logo" />
-          <ul class="nav-main__links">
-            <li class="nav-main__link">Live</li>
-            <li class="nav-main__link">Push</li>
-            <li class="nav-main__link">Link</li>
-            <li class="nav-main__link">Shop</li>
-            <li class="nav-main__link">Packs</li>
-            <li class="nav-main__link">Help</li>
-            <li class="nav-main__link">More +</li>
-          </ul>
+          <a class="nav-main__home-link" href="#">
+            <img src="assets/logomark.svg" alt="logo" />
+          </a>
+
+          <div class="nav-main__links">
+            <a class="nav-main__link" href="#">Live</a>
+            <a class="nav-main__link" href="#">Push</a>
+            <a class="nav-main__link" href="#">Link</a>
+            <a class="nav-main__link" href="#">Shop</a>
+            <a class="nav-main__link" href="#">Packs</a>
+            <a class="nav-main__link" href="#">Help</a>
+            <a class="nav-main__link" href="#">More <span>+</span></a>
+          </div>
         </div>
 
         <div class="nav-main__ctas">
-          <ul>
-            <li class="nav-main__cta">Try Live for free</li>
-            <li class="nav-main__cta">Log in or register</li>
-          </ul>
+          <a class="nav-main__cta nav-main__cta--colored" href="#">
+            Try Live for free
+          </a>
+          <a class="nav-main__cta nav-main__cta--small" href="#"
+            >Log in or register</a
+          >
         </div>
       </nav>
 
       <nav class="nav-sub">
-        <ul>
-          <li class="nav-sub__link"></li>
-          <li class="nav-sub__link"></li>
+        <ul class="nav-sub__links">
+          <li class="nav-sub__link">About</li>
+          <li class="nav-sub__link">Jobs</li>
         </ul>
       </nav>
     </header>
@@ -59,6 +68,6 @@
 
     <footer></footer>
 
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
