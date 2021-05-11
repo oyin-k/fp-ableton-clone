@@ -9,6 +9,10 @@
   --light-purple: #d5b3ff;
 }
 
+p {
+  line-height: 1.5;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Futura PT", sans-serif;
@@ -24,7 +28,6 @@ body {
   font-size: 2rem;
   font-weight: 500;
   border-bottom: 2px solid #eee;
-  /* box-shadow: 0 2px 2px rgba(238, 238, 238, 1); */
 }
 
 .nav-main .nav-main__links-container,
@@ -112,9 +115,245 @@ body {
   background-image: url(https://ableton-production.imgix.net/about/header.jpg?fit=crop&auto=format&fm=jpg);
   background-color: #eee;
   min-height: calc(100vh - 120px);
-  /* min-height: 100vh; */
   margin: 0 8.33333vw 8.33333vw;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* First Description section */
+
+.description-one,
+.description-two,
+.description-three,
+.description-four,
+.description-five,
+.job-description {
+  margin-bottom: 8.33333vw;
+}
+
+.description-one__text,
+.description-two__text,
+.description-three__text,
+.description-four__text,
+.description-five__text,
+.job-description__text {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8.33333vw;
+}
+
+.description-one__text .description-one__text--head,
+.description-two__text .description-two__text--head,
+.description-three__text .description-three__text--head,
+.description-four__text .description-four__text--head,
+.description-five__text .description-five__text--head,
+.job-description__text .job-description__text--head {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.description-one__text .description-one__text--head span {
+  color: var(--blue);
+}
+
+.description-one__text .description-one__text--body,
+.description-two__text .description-two__text--body,
+.description-three__text .description-three__text--body,
+.description-four__text .description-four__text--body,
+.description-five__text .description-five__text--body,
+.job-description__text .job-description__text--body {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.description-one__photos {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding: 8.33333vw;
+  background: linear-gradient(
+    90deg,
+    var(--white) 41.66667%,
+    var(--yellow) 41.66667%
+  );
+}
+
+.description-one__photos .description-one__photo-one {
+  height: 41.66667vw;
+  width: 41.66667vw;
+  object-fit: cover;
+}
+
+.description-one__photos .description-one__photo-two {
+  height: 25vw;
+  width: 33.33333vw;
+  margin-left: 8.33333vw;
+  object-fit: cover;
+}
+
+.description-two .description-two__media {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description-two
+  .description-two__media
+  .description-two__video-container
+  .description-two__video {
+  margin-bottom: 0.4rem;
+}
+
+.description-two
+  .description-two__media
+  .description-two__video-container
+  .description-two__video--description {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.description-three__photos {
+  padding: 8.33333vw;
+  background: linear-gradient(
+    90deg,
+    var(--light-green) 58.33333%,
+    var(--white) 58.33333%
+  );
+}
+
+.description-three__photos .description-three__photos-container {
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+}
+
+.description-three__photos
+  .description-three__photos-container
+  .description-three__photos-column-one
+  .description-three__photo-one,
+.description-three__photos
+  .description-three__photos-container
+  .description-three__photos-column-one
+  .description-three__photo-two {
+  height: 25vw;
+  width: 33.33333vw;
+  object-fit: cover;
+}
+
+.description-three__photos
+  .description-three__photos-container
+  .description-three__photos-column-one
+  .description-three__photo-one {
+  margin-bottom: 8.33333vw;
+}
+
+.description-three__photos
+  .description-three__photos-container
+  .description-three__photos-column-two {
+  display: flex;
+  align-items: center;
+}
+
+.description-three__photos
+  .description-three__photos-container
+  .description-three__photos-column-two
+  .description-three__photo-three {
+  height: 41.66667vw;
+  width: 58.33333vw;
+  /* margin-left: 8.33333vw; */
+  object-fit: cover;
+}
+
+.description-four .description-four__media {
+  width: 83.33333vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description-four .description-four__media .description-four__media-container {
+  object-fit: cover;
+}
+
+.description-five__photos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8.33333vw 0 8.33333vw 8.33333vw;
+  /* position: relative; */
+  background: linear-gradient(
+      90deg,
+      var(--white) 16.66667%,
+      rgba(0, 0, 0, 0) 16.66667%
+    ),
+    linear-gradient(
+      90deg,
+      var(--light-purple) 83.33333%,
+      var(--white) 83.33333%
+    );
+}
+
+.description-five__photos .description-five__photo-one {
+  height: 25vw;
+  width: 33.33333vw;
+  object-fit: cover;
+}
+
+.description-five__photos .description-five__photo-two {
+  height: 41.66667vw;
+  width: 41.66667vw;
+
+  object-fit: cover;
+}
+
+.job-description__job-invite {
+  display: flex;
+
+  padding: 0 8.33333vw 8.33333vw 8.33333vw;
+}
+
+.job-description__job-invite .job-description__job-invite__photo {
+  height: 50vw;
+  width: 41.66667vw;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.job-description__job-invite .job-description__job-invite__text {
+  background-color: var(--light-blue);
+  width: 41.66667vw;
+  height: 41.66667vw;
+  padding: 8.33333vw;
+}
+
+.job-description__job-invite
+  .job-description__job-invite__text
+  .job-description__job-invite__body {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.job-description__job-invite
+  .job-description__job-invite__text
+  .job-description__job-invite__link {
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 500;
+  display: flex;
+  align-items: baseline;
+}
+
+.job-description__job-invite
+  .job-description__job-invite__text
+  .job-description__job-invite__link
+  i {
+  margin-left: 1rem;
+  font-size: 2rem;
 }
