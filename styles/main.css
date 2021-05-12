@@ -9,14 +9,11 @@
   --light-purple: #d5b3ff;
 }
 
-p {
-  line-height: 1.5;
-}
-
 body {
   box-sizing: border-box;
   font-family: "Futura PT", sans-serif;
   color: var(--black);
+  line-height: 1.5;
 }
 
 /* Main Nav */
@@ -356,4 +353,87 @@ body {
   i {
   margin-left: 1rem;
   font-size: 2rem;
+}
+
+/* Footer */
+.footer {
+  border-top: 2px solid #eee;
+  padding: 8.33333vw;
+  font-size: 2rem;
+}
+
+.footer .footer-logo,
+.footer .footer-links-one,
+.footer .footer-links-two,
+.footer .footer-base-links {
+  padding-bottom: 4.16667vw;
+}
+
+.footer .footer-logo {
+  /* height: 8.33333vw; */
+}
+
+.footer .footer-logo img {
+  width: 188px;
+}
+
+.footer .even-columns {
+  display: flex;
+}
+
+.footer .even-columns > * {
+  width: 100%;
+}
+
+.footer .even-columns .col a {
+  text-decoration: none;
+}
+
+.footer .footer-links-one .footer-links-list li {
+  font-weight: 300;
+}
+
+.footer .footer-links-one .footer-links-list li a {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer .footer-links-one .footer-links-list li a i {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.footer .footer-links-one .footer-socials {
+  display: flex;
+}
+
+.footer .footer-links-one .footer-socials > * {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.footer .footer-links-one .footer-socials .facebook {
+  background-color: #3477f2;
+}
+
+.footer .footer-links-one .footer-socials .twitter {
+  background-color: #1da1f2;
+}
+
+.footer .footer-links-one .footer-socials .youtube {
+  background-color: #ff001d;
+}
+
+.footer .footer-links-one .footer-socials .instagram {
+  background-color: #f77737;
+}
+
+.footer .footer-links-one .footer-links-list .footer-links-title,
+.footer .footer-links-one .footer-sign-up .footer-links .footer-sign-up-title {
+  font-weight: 500;
+}
+
+.footer .footer-links-one .footer-sign-up .footer-links .footer-sign-up-text p {
+  font-weight: 300;
 }
