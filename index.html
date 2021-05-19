@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn more about Ableton - maker of Live and Push | Ableton</title>
+    <title>Document</title>
     <!-- Reset Css -->
     <link rel="stylesheet" href="styles/reset.css" />
-    <!-- main style -->
-    <link rel="stylesheet" href="styles/main.css" />
     <!-- font awesome style -->
     <link
       rel="stylesheet"
@@ -16,51 +14,95 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <!-- My Css -->
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
-
   <body>
-    <main>
-      <header class="nav">
-        <nav class="nav-main">
-          <div class="nav-main__links-container">
-            <a class="nav-main__home-link" href="#">
-              <img src="assets/logomark.svg" alt="logo" />
-            </a>
-
-            <div class="nav-main__links">
-              <a class="nav-main__link" href="#">Live</a>
-              <a class="nav-main__link" href="#">Push</a>
-              <a class="nav-main__link" href="#">Link</a>
-              <a class="nav-main__link" href="#">Shop</a>
-              <a class="nav-main__link" href="#">Packs</a>
-              <a class="nav-main__link" href="#">Help</a>
-              <a class="nav-main__link" href="#">More <span>+</span></a>
-            </div>
+    <div class="container">
+      <header class="header">
+        <nav class="main-nav">
+          <div>
+            <a href="" class="main-nav__logo"
+              ><svg
+                class="main-nav__logo__image"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="45px"
+                height="21px"
+                viewBox="0 0 45 21"
+                enable-background="new 0 0 45 21"
+                xml:space="preserve"
+              >
+                <g>
+                  <rect width="3" height="21"></rect>
+                  <rect x="6" width="3" height="21"></rect>
+                  <rect x="12" width="3" height="21"></rect>
+                  <rect x="18" width="3" height="21"></rect>
+                  <g>
+                    <rect x="24" y="18" width="21" height="3"></rect>
+                    <rect x="24" y="12" width="21" height="3"></rect>
+                    <rect x="24" y="6" width="21" height="3"></rect>
+                    <rect x="24" width="21" height="3"></rect>
+                  </g>
+                </g></svg
+            ></a>
+            <ul class="main-nav__list">
+              <li class="main-nav__list-item">
+                <a href="" class="main-nav__link">Live</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="" class="main-nav__link">Push</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="" class="main-nav__link">Link</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="" class="main-nav__link">Shop</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="" class="main-nav__link">Packs</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="" class="main-nav__link">Help</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="" class="main-nav__link"
+                  >More <i class="fas fa-angle-right"></i
+                ></a>
+              </li>
+            </ul>
           </div>
-
-          <div class="nav-main__ctas">
-            <a class="nav-main__cta nav-main__cta--colored" href="#">
-              Try Live for free
-            </a>
-            <a class="nav-main__cta nav-main__cta--small" href="#"
-              >Log in or register</a
-            >
+          <div class="main-nav__ctas">
+            <ul class="main-nav__list">
+              <li class="main-nav__list-item text-primary">
+                Try Live for free
+              </li>
+              <li class="main-nav__list-item">Log in or register</li>
+            </ul>
           </div>
         </nav>
-
-        <nav class="nav-sub">
-          <div class="nav-sub__links">
-            <a class="nav-sub__link">About</a>
-            <a class="nav-sub__link">Jobs</a>
-          </div>
+        <nav class="sub-nav">
+          <ul class="sub-nav__list">
+            <li class="sub-nav__list-item">
+              <a href="" class="sub-nav__link">About</a>
+            </li>
+            <li class="sub-nav__list-item">
+              <a href="" class="sub-nav__link">Jobs</a>
+            </li>
+          </ul>
         </nav>
       </header>
 
-      <section class="site-body">
-        <section class="landing">
-          <div class="landing-image">
+      <main class="main">
+        <!-- Landing section -->
+        <section class="landing margin-inline margin-bottom">
+          <div class="landing__image">
             <svg
-              class="landing-image__logo"
+              class="landing__logo"
               with="430px"
               height="104px"
               viewBox="0 0 430 104"
@@ -77,69 +119,73 @@
           </div>
         </section>
 
-        <section class="description-one">
-          <div class="description-one__text">
-            <h1 class="description-one__text--head">
-              We make <span>Live</span>, <span>Push</span> and
-              <span>Link</span> — unique software and hardware for music
-              creation and performance. With these products, our community of
-              users creates amazing things.
+        <!-- description section 1 -->
+        <section class="description-one margin-bottom">
+          <div class="description-text padding-inline margin-bottom">
+            <h1 class="description__title">
+              We make <span class="text-primary">Live</span>,
+              <span class="text-primary">Push</span> and
+              <span class="text-primary">Link</span> — unique software and
+              hardware for music creation and performance. With these products,
+              our community of users creates amazing things.
             </h1>
-            <p class="description-one__text--body">
+            <p class="description__intro">
               Ableton was founded in 1999 and released the first version of Live
               in 2001. Our products are used by a community of dedicated
               musicians, sound designers, and artists from across the world.
             </p>
           </div>
-          <div class="description-one__photos">
+          <div class="description-media background-right">
+            <div class="description-media__background"></div>
             <img
-              class="description-one__photo-one"
               src="https://ableton-production.imgix.net/about/photo-1.jpg?fit=crop"
-              alt="woman on beat box"
+              alt=""
+              class="description__image image-medium"
             />
             <img
-              class="description-one__photo-two"
               src="https://ableton-production.imgix.net/about/photo-2.jpg?fit=crop"
-              alt="music collection lobby"
+              alt=""
+              class="description__image image-small"
             />
           </div>
         </section>
 
-        <section class="description-two">
-          <div class="description-two__text">
-            <h1 class="description-two__text--head">
+        <!-- description section 2 -->
+        <section class="description-two margin-bottom">
+          <div class="description-text padding-inline margin-bottom">
+            <h1 class="description__title">
               Making music isn’t easy. It takes time, effort, and learning. But
               when you’re in the flow, it’s incredibly rewarding.
             </h1>
-            <p class="description-two__text--body">
+            <p class="description__intro">
               We feel the same way about making Ableton products. The driving
               force behind Ableton is our passion for what we make, and the
               people we make it for.
             </p>
           </div>
-
-          <div class="description-two__media">
-            <div class="description-two__video-container">
-              <img
-                class="description-two__video"
-                src="https://ableton-production.imgix.net/about/poster-juanpe.jpg?fit=crop&auto=format&fm=jpg"
-                alt="video interview"
-              />
-              <p class="description-two__video--description">
-                Why Ableton - Juanpe Bolivar
-              </p>
-            </div>
+          <div
+            class="description-media single-media-item padding-inline margin-bottom"
+          >
+            <img
+              src="https://ableton-production.imgix.net/about/poster-juanpe.jpg?auto=format&dpr=2&fit=crop&fm=jpg&ixjsv=1.1.3&q=50&w=313"
+              alt=""
+              class="description__image"
+            />
+            <p class="description__media-caption">
+              Why Ableton - Juanpe Bolivar
+            </p>
           </div>
         </section>
 
-        <section class="description-three">
-          <div class="description-three__text">
-            <h1 class="description-three__text--head">
+        <!-- description section 3 -->
+        <section class="description-three margin-bottom">
+          <div class="description-text padding-inline margin-bottom">
+            <h1 class="description__title">
               We are more than 350 people from 30 different countries divided
               between our headquarters in Berlin and our offices in Los Angeles
               and Tokyo.
             </h1>
-            <p class="description-three__text--body">
+            <p class="description__intro">
               Most of us are active musicians, producers, and DJs, and many of
               us use Live and Push every day. We come from a wide range of
               cultural and professional backgrounds. Some of us have PhDs, some
@@ -149,38 +195,38 @@
               future of music culture.
             </p>
           </div>
-          <div class="description-three__photos">
-            <div class="description-three__photos-container">
-              <div class="description-three__photos-column-one">
-                <img
-                  class="description-three__photo-one"
-                  src="https://ableton-production.imgix.net/about/photo-3.jpg?fit=crop"
-                  alt="woman on beat box"
-                />
-                <img
-                  class="description-three__photo-two"
-                  src="https://ableton-production.imgix.net/about/photo-4.jpg?fit=crop"
-                  alt="music collection lobby"
-                />
-              </div>
-              <div class="description-three__photos-column-two">
-                <img
-                  class="description-three__photo-three"
-                  src="https://ableton-production.imgix.net/about/photo-5.jpg?fit=crop"
-                  alt="music collection lobby"
-                />
-              </div>
+          <div class="description-media background-left">
+            <div class="description-media__background"></div>
+            <div class="image-container">
+              <img
+                src="https://ableton-production.imgix.net/about/photo-3.jpg?dpr=2&fit=crop&h=94&ixjsv=1.1.3&q=50&w=125"
+                alt=""
+                class="description__image image-small"
+              />
+              <img
+                src="https://ableton-production.imgix.net/about/photo-4.jpg?dpr=2&fit=crop&h=94&ixjsv=1.1.3&q=50&w=125"
+                alt=""
+                class="description__image image-small"
+              />
+            </div>
+            <div class="image-container">
+              <img
+                src="https://ableton-production.imgix.net/about/photo-5.jpg?dpr=2&fit=crop&h=156&ixjsv=1.1.3&q=50&w=156"
+                alt=""
+                class="description__image image-medium"
+              />
             </div>
           </div>
         </section>
 
-        <section class="description-four">
-          <div class="description-four__text">
-            <h1 class="description-four__text--head">
+        <!-- description section 4 -->
+        <section class="description-four margin-bottom">
+          <div class="description-text padding-inline margin-bottom">
+            <h1 class="description__title">
               We believe it takes focus to create truly outstanding instruments.
               We only work on a few products and we strive to make them great.
             </h1>
-            <p class="description-four__text--body">
+            <p class="description__intro">
               Rather than having a one-size-fits-all process, we try to give our
               people what they need to work their magic and grow. We’ve learned
               that achieving the best results comes from building teams that are
@@ -189,29 +235,30 @@
               opinion and debate are valued and openly encouraged.
             </p>
           </div>
-          <div class="description-four__media">
-            <div class="description-four__media-container">
-              <img
-                class="description-four__photo"
-                src="https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?auto=format&dpr=2&fit=crop&fm=jpg&ixjsv=1.1.3&q=50&w=1066"
-                alt="video interview"
-              />
-            </div>
+          <div
+            class="description-media single-media-item padding-inline margin-bottom"
+          >
+            <img
+              src="https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?auto=format&dpr=2&fit=crop&fm=jpg&ixjsv=1.1.3&q=50&w=309"
+              alt=""
+              class="description__image"
+            />
           </div>
         </section>
 
-        <section class="description-five">
-          <div class="description-five__text">
-            <h1 class="description-five__text--head">
+        <!-- description section 5 -->
+        <section class="description-five margin-bottom">
+          <div class="description-text padding-inline margin-bottom">
+            <h1 class="description__title">
               We’re passionate about what we do, but we’re equally passionate
               about improving who we are.
             </h1>
-            <p class="description-five__text--body">
+            <p class="description__intro">
               We work hard to foster an environment where people can grow both
               personally and professionally, and we strive to create a wealth of
               opportunities to learn from and with each other.
             </p>
-            <p class="description-five__text--body">
+            <p class="description__intro">
               Alongside an internal training program, employees are actively
               supported in acquiring new knowledge and skills, and coached on
               applying these in their daily work. In addition, staff-organized
@@ -219,28 +266,30 @@
               technologies, production techniques and best practices.
             </p>
           </div>
-          <div class="description-five__photos">
+          <div class="description-media background-middle">
+            <div class="description-media__background"></div>
             <img
-              class="description-five__photo-one"
-              src="https://ableton-production.imgix.net/about/photo-6-a.jpg?fit=crop"
-              alt="women at a computer desk"
+              src="https://ableton-production.imgix.net/about/photo-6-a.jpg?dpr=2&fit=crop&h=102&ixjsv=1.1.3&q=50&w=136"
+              alt=""
+              class="description__image image-small"
             />
             <img
-              class="description-five__photo-two"
-              src="https://ableton-production.imgix.net/about/photo-7.jpg?fit=crop"
-              alt="office workshop"
+              src="https://ableton-production.imgix.net/about/photo-7.jpg?dpr=2&fit=crop&h=155&ixjsv=1.1.3&q=50&w=155"
+              alt=""
+              class="description__image image-medium"
             />
           </div>
         </section>
 
-        <section class="job-description">
-          <div class="job-description__text">
-            <h1 class="job-description__text--head">
+        <!-- description section 6 -->
+        <section class="description-six margin-bottom">
+          <div class="description-text padding-inline margin-bottom">
+            <h1 class="description__title">
               We want our employees to love it here. Since we’re looking for
               exceptional talent from around the world, we will do everything we
               can to make your transition as easy as possible.
             </h1>
-            <p class="job-description__text--body">
+            <p class="description__intro">
               If you're joining us in Berlin, we'll help with relocation and
               paperwork. We’ll even provide you with free German or English
               lessons. Plus, working in Germany means you can expect
@@ -251,204 +300,47 @@
               small-group activities.
             </p>
           </div>
-          <div class="job-description__job-invite">
-            <img
-              class="job-description__job-invite__photo"
-              src="https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&dpr=2&fit=crop&h=640&ixjsv=1.1.3&q=50&w=533"
-              alt="dinning hall"
-            />
-            <div class="job-description__job-invite__text">
-              <p class="job-description__job-invite__body">
+          <div class="description-media job-teaser margin-inline">
+            <div class="description__image"></div>
+            <div class="description-media__background">
+              <h1 class="description__title">
                 We’re really proud of the work we’ve done so far. But there’s so
                 much more to come. If you’d like to be a part of it, please join
                 us.
-              </p>
-              <a href="#" class="job-description__job-invite__link"
-                >See latest jobs <i class="fas fa-angle-right"></i
-              ></a>
+
+                <a href="#" class="job-link">See latest jobs </a>
+              </h1>
             </div>
           </div>
         </section>
-      </section>
-    </main>
+      </main>
+    </div>
 
-    <!-- <footer class="footer">
-      <div class="footer-logo">
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Main Footer -->
+      <div class="main-footer">
         <img
           src="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/ableton-wordmark.c025e3df71b3.svg"
+          alt=""
+          class="footer__logo margin-bottom"
         />
-      </div>
-      <div class="footer-links-one even-columns">
-        <div class="col">
-          <ul class="footer-links-list">
-            <li>
-              <a href="#"
-                >Register Live or Push <i class="fas fa-angle-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#">About Ableton <i class="fas fa-angle-right"></i></a>
-            </li>
-            <li>
-              <a href="#">Jobs <i class="fas fa-angle-right"></i></a>
-            </li>
-          </ul>
-          <ul class="footer-socials">
-            <li class="facebook">
-              <a href=""
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 40 40"
-                  role="img"
-                  focusable="false"
-                >
-                  <title>Facebook</title>
-                  <path
-                    d="M33.334 20a13.333 13.333 0 10-15.417 13.167v-9.312h-3.385V20h3.385v-2.933c0-3.342 1.991-5.187 5.036-5.187a20.5 20.5 0 012.985.26v3.277h-1.681a1.927 1.927 0 00-2.173 2.082v2.5h3.7l-.591 3.854h-3.109v9.314A13.337 13.337 0 0033.334 20z"
-                    fill="#fff"
-                  ></path>
-                  <path
-                    d="M25.19 23.854L25.781 20h-3.7v-2.5a1.927 1.927 0 012.173-2.082h1.681v-3.283a20.5 20.5 0 00-2.985-.26c-3.046 0-5.036 1.846-5.036 5.188v2.938h-3.383v3.854h3.385v9.32a13.473 13.473 0 004.167 0v-9.317z"
-                    fill="#3477f2"
-                  ></path></svg
-              ></a>
-            </li>
-            <li class="twitter">
-              <a href=""
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 40 40"
-                  role="img"
-                  focusable="false"
-                >
-                  <title>Twitter</title>
-                  <path
-                    d="M15.362 30.159a14.5 14.5 0 0014.594-14.594c0-.222 0-.443-.015-.663a10.436 10.436 0 002.559-2.655 10.238 10.238 0 01-2.946.807 5.147 5.147 0 002.255-2.837 10.279 10.279 0 01-3.257 1.245 5.134 5.134 0 00-8.741 4.678A14.562 14.562 0 019.24 10.781a5.133 5.133 0 001.588 6.847 5.091 5.091 0 01-2.328-.642v.065a5.131 5.131 0 004.115 5.028 5.121 5.121 0 01-2.316.088 5.135 5.135 0 004.792 3.562 10.292 10.292 0 01-6.37 2.2 10.441 10.441 0 01-1.221-.074 14.521 14.521 0 007.862 2.3"
-                    fill="#fff"
-                  ></path></svg
-              ></a>
-            </li>
-            <li class="youtube">
-              <a href=""
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 40 40"
-                  role="img"
-                  focusable="false"
-                >
-                  <title>Youtube</title>
-                  <path
-                    d="M32.776 13.601a3.351 3.351 0 00-2.358-2.373C28.339 10.667 20 10.667 20 10.667s-8.339 0-10.418.561a3.351 3.351 0 00-2.358 2.373 35.146 35.146 0 00-.557 6.46 35.146 35.146 0 00.557 6.46 3.351 3.351 0 002.358 2.373c2.08.561 10.418.561 10.418.561s8.339 0 10.418-.561a3.351 3.351 0 002.358-2.373 35.146 35.146 0 00.557-6.46 35.146 35.146 0 00-.557-6.46z"
-                    fill="#fff"
-                  ></path>
-                  <path
-                    d="M17.273 24.025l6.97-3.961-6.97-3.969z"
-                    fill="#ff001d"
-                  ></path></svg
-              ></a>
-            </li>
-            <li class="instagram">
-              <a href=""
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 40 40"
-                  role="img"
-                  focusable="false"
-                >
-                  <title>Instagram</title>
-                  <g transform="translate(-336 -285)">
-                    <path
-                      d="M356 294.069c3.56 0 3.982.014 5.388.078a7.38 7.38 0 012.476.459 4.416 4.416 0 012.53 2.53 7.38 7.38 0 01.459 2.476c.064 1.406.078 1.828.078 5.388s-.014 3.982-.078 5.388a7.38 7.38 0 01-.459 2.476 4.416 4.416 0 01-2.53 2.53 7.38 7.38 0 01-2.476.459c-1.406.064-1.827.078-5.388.078s-3.982-.014-5.388-.078a7.38 7.38 0 01-2.476-.459 4.416 4.416 0 01-2.53-2.53 7.38 7.38 0 01-.459-2.476c-.064-1.406-.078-1.828-.078-5.388s.014-3.982.078-5.388a7.38 7.38 0 01.459-2.476 4.416 4.416 0 012.53-2.53 7.38 7.38 0 012.476-.459c1.406-.064 1.828-.078 5.388-.078m0-2.4c-3.621 0-4.075.015-5.5.08a9.787 9.787 0 00-3.237.62 6.818 6.818 0 00-3.9 3.9 9.787 9.787 0 00-.62 3.237c-.065 1.422-.08 1.876-.08 5.5s.015 4.075.08 5.5a9.787 9.787 0 00.62 3.237 6.818 6.818 0 003.9 3.9 9.787 9.787 0 003.237.62c1.422.065 1.876.08 5.5.08s4.075-.015 5.5-.08a9.787 9.787 0 003.237-.62 6.818 6.818 0 003.9-3.9 9.787 9.787 0 00.62-3.237c.065-1.422.08-1.876.08-5.5s-.015-4.075-.08-5.5a9.787 9.787 0 00-.62-3.237 6.818 6.818 0 00-3.9-3.9 9.787 9.787 0 00-3.237-.62c-1.422-.065-1.876-.08-5.5-.08z"
-                      fill="#fff"
-                    ></path>
-                    <path
-                      d="M356 298.153a6.847 6.847 0 106.847 6.847 6.847 6.847 0 00-6.847-6.847zm0 11.291a4.444 4.444 0 114.444-4.444 4.444 4.444 0 01-4.444 4.444z"
-                      fill="#fff"
-                    ></path>
-                    <circle
-                      cx="1.6"
-                      cy="1.6"
-                      r="1.6"
-                      transform="translate(361.517 296.283)"
-                      fill="#fff"
-                    ></circle>
-                  </g></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul class="footer-links-list">
-            <li class="footer-links-title">Education</li>
-            <li>
-              <a href="#">
-                Offers for students and teachers
-                <i class="fas fa-angle-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                >Ableton for the Classroom <i class="fas fa-angle-right"></i
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                >Ableton for Colleges and Universities
-                <i class="fas fa-angle-right"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="col footer-sign-up">
-          <ul class="footer-links">
-            <li class="footer-sign-up-title">Sign up to our newsletter</li>
-            <li class="footer-sign-up-text">
-              <p>
-                Enter your email address to stay up to date with the latest
-                offers, tutorials, downloads, surveys and more.
-              </p>
-            </li>
-          </ul>
-          <form class="footer-sign-up">
-            <input
-              class="footer-sign-up-input"
-              type="text"
-              placeholder="Email Address"
-            />
-            <button class="footer-sign-up-button">Sign Up</button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-links-two even-columns"></div>
-      <div class="footer-base-links even-columns"></div>
-    </footer> -->
-
-    <footer class="footer">
-      <section class="footer-main">
-        <div class="footer-main__logo">
-          <img
-            src="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/ableton-wordmark.c025e3df71b3.svg"
-            alt="Ableton Wordmark logo"
-          />
-        </div>
-        <div class="footer-main-items__link-section">
-          <div class="footer-main-items">
-            <ul class="footer-main-items-links">
-              <li class="footer-main-items-link">
-                <a href=""
-                  >Register Live or Push <i class="fas fa-angle-right"></i
-                ></a>
+        <div class="footer__info-container margin-bottom">
+          <div class="footer__info">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="" class="footer__link">Register Live or Push</a>
               </li>
-              <li class="footer-main-items-link">
-                <a href="">About Ableton <i class="fas fa-angle-right"></i></a>
+              <li class="footer__list-item">
+                <a href="" class="footer__link">About Ableton</a>
               </li>
-              <li class="footer-main-items-link">
-                <a href="">Jobs <i class="fas fa-angle-right"></i></a>
+              <li class="footer__list-item">
+                <a href="" class="footer__link">Jobs</a>
               </li>
             </ul>
-            <ul class="footer-main-items__social-links">
-              <li class="footer-main-items__social-link">
-                <a href="">
+            <ul class="footer__social-list">
+              <li class="footer__social-list-item">
+                <a href="" class="footer__social-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 40 40"
@@ -468,8 +360,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="footer-main-items__social-link">
-                <a href="">
+              <li class="footer__social-list-item">
+                <a href="" class="footer__social-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 40 40"
@@ -485,8 +377,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="footer-main-items__social-link">
-                <a href="">
+              <li class="footer__social-list-item">
+                <a href="" class="footer__social-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 40 40"
@@ -506,8 +398,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="footer-main-items__social-link">
-                <a href="">
+              <li class="footer__social-list-item">
+                <a href="" class="footer__social-link">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 40 40"
@@ -539,117 +431,112 @@
             </ul>
           </div>
 
-          <div class="footer-main-items">
-            <h3 class="footer-main-items__title">Education</h3>
-            <ul class="footer-main-items-links">
-              <li class="footer-main-items-link">
-                <a href="">
-                  Offers for students and teachers<i
-                    class="fas fa-angle-right"
-                  ></i
-                ></a>
+          <div class="footer__info education">
+            <h3 class="footer__info-title">Education</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="" class="footer__link">
+                  Offers for students and teachers</a
+                >
               </li>
-              <li class="footer-main-items-link">
-                <a href="">
-                  Ableton for the Classroom<i class="fas fa-angle-right"></i
-                ></a>
+              <li class="footer__list-item">
+                <a href="" class="footer__link">Ableton for the Classroom</a>
               </li>
-              <li class="footer-main-items-link">
-                <a href="">
-                  Ableton for Colleges and Universities<i
-                    class="fas fa-angle-right"
-                  ></i
-                ></a>
+              <li class="footer__list-item">
+                <a href="" class="footer__link"
+                  >Ableton for Colleges and Universities</a
+                >
               </li>
             </ul>
           </div>
-          <div class="footer-main-items">
-            <h3 class="footer-main-items__title">Sign up to our newsletter</h3>
-            <p class="footer-main-items__text">
+
+          <div class="footer__info newsletter-signup">
+            <h3 class="footer__info-title">Sign up to our newsletter</h3>
+            <p class="footer__info-text">
               Enter your email address to stay up to date with the latest
               offers, tutorials, downloads, surveys and more.
             </p>
-            <form class="footer-main-items__signup-form">
-              <input type="email" placeholder="Email Address" />
-              <input type="submit" value="Sign Up" />
+            <form>
+              <input type="email" placeholder="Email Address" name="" id="" />
+              <input type="submit" value="Sign up" />
             </form>
           </div>
-          <div class="footer-main-items">
-            <h3 class="footer-main-items__title">Community</h3>
-            <ul class="footer-main-items-links">
-              <li class="footer-main-items-link">
-                <a href="">
-                  Find Ableton User Groups<i class="fas fa-angle-right"></i
-                ></a>
+        </div>
+        <div class="footer__info-container margin-bottom">
+          <div class="footer__info">
+            <h3 class="footer__info-title">Community</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="" class="footer__link"> Find Ableton User Groups</a>
               </li>
-              <li class="footer-main-items-link">
-                <a href="">
-                  Find Certified Training<i class="fas fa-angle-right"></i
-                ></a>
+              <li class="footer__list-item">
+                <a href="" class="footer__link">Find Certified Training</a>
               </li>
-              <li class="footer-main-items-link">
-                <a href="">
-                  Become a Certified Trainer<i class="fas fa-angle-right"></i
-                ></a>
+              <li class="footer__list-item">
+                <a href="" class="footer__link">Become a Certified Trainer</a>
               </li>
             </ul>
           </div>
-          <div class="footer-main-items">
-            <h3 class="footer-main-items__title">Distributors</h3>
-            <ul class="footer-main-items-links">
-              <li class="footer-main-items-link">
-                <a href="">
-                  Find Distributors<i class="fas fa-angle-right"></i
-                ></a>
+          <div class="footer__info">
+            <h3 class="footer__info-title">Distributors</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="" class="footer__link"> Find Distributors</a>
               </li>
-              <li class="footer-main-items-link">
-                <a href="">
-                  Try Push in-store<i class="fas fa-angle-right"></i
-                ></a>
+              <li class="footer__list-item">
+                <a href="" class="footer__link">Try Push in-store</a>
               </li>
             </ul>
           </div>
-          <div class="footer-main-items">
-            <h3 class="footer-main-items__title">Language and Location</h3>
-            <div class="footer-main-items__selection-ctas">
-              <div class="footer-main-items__selection-cta">
-                <select name="language" id="">
-                  <option value="Language">English</option>
-                </select>
-              </div>
-
-              <div class="footer-main-items__selection-cta">
-                <select name="location" id="">
-                  <option value="Location">Nigeria</option>
-                </select>
-              </div>
-            </div>
+          <div class="footer__info">
+            <h3 class="footer__info-title">Language and Location</h3>
+            <form class="language-and-location">
+              <select name="" id="" class="language">
+                <option value="English">English</option>
+              </select>
+              <select name="" id="" class="location">
+                <option value="Nigeria">Nigeria</option>
+              </select>
+            </form>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="footer-bottom">
-        <ul class="footer-bottom__links">
-          <li class="footer-botttom__link"><a href="">Archive</a></li>
-          <li class="footer-botttom__link"><a href="">Contact Us</a></li>
-          <li class="footer-botttom__link"><a href="">Press Resources</a></li>
-          <li class="footer-botttom__link"><a href="">Legal Info</a></li>
-          <li class="footer-botttom__link"><a href="">Privacy Policy</a></li>
-          <li class="footer-botttom__link"><a href="">Cookie Settings</a></li>
-          <li class="footer-botttom__link"><a href="">Imprint</a></li>
+      <!-- Sub Footer -->
+      <div class="sub-footer">
+        <ul class="sub-footer__list">
+          <li class="sub-footer__list-item">
+            <a href="" class="sub-footer__link">Archive</a>
+          </li>
+          <li class="sub-footer__list-item">
+            <a href="" class="sub-footer__link">Contact Us</a>
+          </li>
+          <li class="sub-footer__list-item">
+            <a href="" class="sub-footer__link">Press Resources</a>
+          </li>
+          <li class="sub-footer__list-item">
+            <a href="" class="sub-footer__link">Legal Info</a>
+          </li>
+          <li class="sub-footer__list-item">
+            <a href="" class="sub-footer__link">Privacy Policy</a>
+          </li>
+          <li class="sub-footer__list-item">
+            <a href="" class="sub-footer__link">Cookie Settings</a>
+          </li>
+          <li class="sub-footer__list-item">
+            <a href="" class="sub-footer__link">Imprint</a>
+          </li>
         </ul>
-
-        <ul class="footer-bottom__logo">
-          <li>Made in Berlin</li>
-          <li>
+        <ul class="sub-footer__list copyright">
+          <li class="sub-footer__list-item">Made in Berlin</li>
+          <li class="sub-footer__list-item">
             <img
               src="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/ableton-hallmark.ef5355379032.svg"
               alt=""
             />
           </li>
         </ul>
-      </section>
+      </div>
     </footer>
-    <script src="scripts/main.js"></script>
   </body>
 </html>
