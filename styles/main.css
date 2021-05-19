@@ -1,18 +1,31 @@
-/*=========== Table of Content ================*/
+/*
+=========== 
+Table of Content 
+================*
+/
+
 /* 
   1. global styles
-    1a. utility classes
+    1a. custom properties
+    1b. utility classes
 
   2. typography
 
   3. layout
     3a. header
-    3b. Landing section
+    3b. landing section
+    3c. description sections
 
   4. footer
 */
 
-/*=== 1. global styles ===*/
+/*
+============== 
+1. global styles 
+=================
+*/
+
+/* 1a. custom properties */
 :root {
   /* colors */
   --clr-primary: #0000ff;
@@ -32,7 +45,7 @@ body {
   font-family: "Futura PT", sans-serif;
 }
 
-/*=== 1a. utility classes ===*/
+/* 1b. utility classes */
 .padding-inline {
   padding: 0 8.33333vw;
 }
@@ -57,7 +70,16 @@ body {
   color: var(--clr-primary);
 }
 
-/*=== 2. typography ===*/
+.text-secondary {
+  color: var(--clr-secondary);
+}
+
+/*
+============== 
+2. typography 
+=================
+*/
+
 h1 {
   font-size: 2rem;
   font-weight: var(--fw-bold);
@@ -84,7 +106,12 @@ a {
   }
 }
 
-/*=== 3. Layout ===*/
+/*
+============== 
+3. layout 
+=================
+*/
+
 body {
   display: flex;
   min-height: 100vh;
@@ -101,13 +128,88 @@ body {
 
 /* 3a. header */
 
+.main-nav,
+.main-nav__links-section,
+.main-nav__list,
+.sub-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav,
+.sub-nav {
+  padding: 2rem 4rem;
+  font-weight: var(--fw-normal);
+}
+
+.main-nav {
+  justify-content: space-between;
+  border-bottom: 2px solid var(--clr-accent-grey);
+  font-size: 2rem;
+}
+
+.logo {
+  margin-right: 3.2rem;
+  height: 2.8rem;
+}
+
+.main-nav__logo {
+  width: 6rem;
+  height: 2.8rem;
+}
+
+.main-nav__list .main-nav__list-item:first-of-type {
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+
+.main-nav__list-item + .main-nav__list-item {
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+.main-nav__ctas .main-nav__list-item:first-of-type {
+  padding-right: 0;
+  margin-right: 1rem;
+}
+
+.main-nav__ctas .main-nav__list-item:last-of-type {
+  font-size: 1.6rem;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.sub-nav {
+  font-size: 1.6rem;
+}
+
+.sub-nav__list .sub-nav__list-item:first-of-type {
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+
+.sub-nav__list-item + .sub-nav__list-item {
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .sub-nav {
+    font-size: 1.4rem;
+  }
+
+  .main-nav__ctas .main-nav__list-item:last-of-type {
+    font-size: 1.4rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .header {
     display: none;
   }
 }
 
-/* 3b. Landing section */
+/* 3b. landing section */
 
 .landing__image {
   background-image: url(https://ableton-production.imgix.net/about/header.jpg?fit=crop&auto=format&fm=jpg);
@@ -125,7 +227,14 @@ body {
   height: 5.2rem;
 }
 
-/* 3b description section*/
+@media screen and (min-width: 768px) {
+  .landing__logo {
+    width: 43rem;
+    height: 10.4rem;
+  }
+}
+
+/* 3c. description sections */
 
 .description-media {
   position: relative;
@@ -140,6 +249,19 @@ body {
   width: 41.66667vw;
   height: 41.66667vw;
 }
+
+.description__image {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.single-media-item {
+  width: 100%;
+}
+
+/* description section | one */
 
 .description-one .image-medium {
   left: 8.33333vw;
@@ -161,20 +283,10 @@ body {
   height: 58.33333vw;
 }
 
-.description__image {
-  position: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.single-media-item {
-  width: 100%;
-}
-
-.single-media-item > .description__image {
-  position: static;
-  width: 100%;
+/* description section | two */
+.description__media-caption {
+  font-size: 1.4rem;
+  margin-top: 0.5em;
 }
 
 @media screen and (min-width: 768px) {
@@ -186,12 +298,7 @@ body {
   }
 }
 
-.description__media-caption {
-  font-size: 1.4rem;
-  margin-top: 0.5em;
-}
-
-/* description 3 */
+/* description section | three */
 .description-three .image-small {
   left: 8.33333vw;
 }
@@ -219,6 +326,13 @@ body {
   height: 75vw;
 }
 
+/* description section | four */
+.single-media-item > .description__image {
+  position: static;
+  width: 100%;
+}
+
+/* description section | five */
 .description-five .description__intro:first-of-type {
   margin-bottom: 1em;
 }
@@ -243,7 +357,7 @@ body {
   right: 0;
 }
 
-/* description 6 | Job teaser */
+/* description section | six | job teaser */
 
 .job-teaser {
   display: flex;
@@ -307,7 +421,12 @@ body {
   }
 }
 
-/* 4. Footer */
+/*
+============== 
+4. footer 
+=================
+*/
+
 .footer {
   padding: 8.33333vw;
 }
