@@ -14,12 +14,206 @@
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <!-- Headroom -->
+    <script src="https://unpkg.com/headroom.js"></script>
     <!-- My Css -->
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <div class="container">
       <header class="header">
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+          <div class="mobile-nav__links-section">
+            <a href="" class="mobile-nav__link mobile-logo"
+              ><svg
+                class="mobile-nav__logo"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="45px"
+                height="21px"
+                viewBox="0 0 45 21"
+                enable-background="new 0 0 45 21"
+                xml:space="preserve"
+              >
+                <g>
+                  <rect width="3" height="21"></rect>
+                  <rect x="6" width="3" height="21"></rect>
+                  <rect x="12" width="3" height="21"></rect>
+                  <rect x="18" width="3" height="21"></rect>
+                  <g>
+                    <rect x="24" y="18" width="21" height="3"></rect>
+                    <rect x="24" y="12" width="21" height="3"></rect>
+                    <rect x="24" y="6" width="21" height="3"></rect>
+                    <rect x="24" width="21" height="3"></rect>
+                  </g>
+                </g></svg
+            ></a>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__list-item">
+                <a href="#" class="mobile-nav__link icon-link" id="menu-button"
+                  >More
+                  <i class="fas fa-caret-down mobile-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Slide down links section -->
+          <div class="mobile-nav__expanded-links">
+            <div class="mobile-nav__expanded-link-info">
+              <ul class="mobile-nav__expanded-link__list">
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a href="" class="mobile-nav__expanded-link">Live</a>
+                </li>
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a href="" class="mobile-nav__expanded-link">Push</a>
+                </li>
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a href="" class="mobile-nav__expanded-link">Link</a>
+                </li>
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a href="" class="mobile-nav__expanded-link">Shop</a>
+                </li>
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a href="" class="mobile-nav__expanded-link">Packs</a>
+                </li>
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a href="" class="mobile-nav__expanded-link">Help</a>
+                </li>
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a href="" class="mobile-nav__expanded-link"
+                    >Try Live for free</a
+                  >
+                </li>
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a
+                    href=""
+                    class="mobile-nav__expanded-link mobile__text-small"
+                    >Log in or register</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-nav__expanded-link-info">
+              <h1 class="mobile-nav__expanded-link-info__title">
+                More on Ableton.com:
+              </h1>
+              <ul class="mobile-nav__expanded-link__list">
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a
+                    href=""
+                    class="mobile-nav__expanded-link mobile__text-small"
+                    >Blog</a
+                  >
+                </li>
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a
+                    href=""
+                    class="mobile-nav__expanded-link mobile__text-small"
+                    >Ableton for the Classroom</a
+                  >
+                </li>
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a
+                    href=""
+                    class="mobile-nav__expanded-link mobile__text-small"
+                    >Ableton for College</a
+                  >
+                </li>
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a
+                    href=""
+                    class="mobile-nav__expanded-link mobile__text-small"
+                    >Certified Training</a
+                  >
+                </li>
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a
+                    href=""
+                    class="mobile-nav__expanded-link mobile__text-small"
+                    >About Ableton</a
+                  >
+                </li>
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a
+                    href=""
+                    class="mobile-nav__expanded-link mobile__text-small"
+                    >Jobs</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- resources -->
+            <div class="mobile-nav__expanded-link-info">
+              <h1 class="mobile-nav__expanded-link-info__title">
+                More from Ableton:
+              </h1>
+              <ul class="mobile-nav__expanded-link__list resources">
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a
+                    href=""
+                    class="mobile-nav__expanded-link mobile__text-small"
+                  >
+                    <h3 class="mobile-nav__resources-link__title">Loop</h3>
+                    <p class="mobile-nav__resources-body">
+                      Watch Talks, Performances and Features from Ableton's
+                      Summit for Music Makers
+                    </p>
+                  </a>
+                </li>
+
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a
+                    href=""
+                    class="mobile-nav__expanded-link mobile__text-small"
+                  >
+                    <h3 class="mobile-nav__resources-link__title">
+                      Learning Music
+                    </h3>
+                    <p class="mobile-nav__resources-body">
+                      Learn the fundamentals of music making right in your
+                      browser.
+                    </p>
+                  </a>
+                </li>
+
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a
+                    href=""
+                    class="mobile-nav__expanded-link mobile__text-small"
+                  >
+                    <h3 class="mobile-nav__resources-link__title">
+                      Learning Synths
+                    </h3>
+                    <p class="mobile-nav__resources-body">
+                      Get started with synthesis using a web-based synth and
+                      accompanying lessons.
+                    </p>
+                  </a>
+                </li>
+
+                <li class="mobile-nav__expanded-link__list-item">
+                  <a
+                    href=""
+                    class="mobile-nav__expanded-link mobile__text-small"
+                  >
+                    <h3 class="mobile-nav__resources-link__title">
+                      Making Music
+                    </h3>
+                    <p class="mobile-nav__resources-body">
+                      Some tips from 74 Creative Strategies for Electronic
+                      Producers.
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         <!-- Main nav -->
         <nav class="main-nav">
           <div class="main-nav__links-section">
@@ -71,9 +265,10 @@
                 <a href="" class="main-nav__link">Help</a>
               </li>
               <li class="main-nav__list-item">
-                <a href="" class="main-nav__link"
+                <a href="#" class="main-nav__link icon-link mega-menu__btn"
                   >More
-                  <!-- <i class="fas fa-plus"></i> -->
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
                 </a>
               </li>
             </ul>
@@ -86,10 +281,82 @@
               <li class="main-nav__list-item">Log in or register</li>
             </ul>
           </div>
+
+          <!-- Mega Menu -->
+          <div class="mega-menu">
+            <div class="row">
+              <h3 class="list__title">More on Ableton.com:</h3>
+              <ul class="mega-menu__list">
+                <li class="mega-menu__list-item">
+                  <a href="#" class="mega-menu__link">Blog</a>
+                </li>
+                <li class="mega-menu__list-item">
+                  <a href="#" class="mega-menu__link"
+                    >Ableton for the Classroom</a
+                  >
+                </li>
+                <li class="mega-menu__list-item">
+                  <a href="#" class="mega-menu__link"
+                    >Ableton for Colleges and Universities</a
+                  >
+                </li>
+                <li class="mega-menu__list-item">
+                  <a href="#" class="mega-menu__link">Certified Training</a>
+                </li>
+                <li class="mega-menu__list-item">
+                  <a href="#" class="mega-menu__link">About Ableton</a>
+                </li>
+                <li class="mega-menu__list-item">
+                  <a href="#" class="mega-menu__link">Jobs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="row">
+              <h3 class="list__title">More from Ableton:</h3>
+              <ul class="mega-menu__list">
+                <li class="mega-menu__list-item">
+                  <a href="#" class="mega-menu__link">
+                    <h3 class="mega-menu__link-title">Loop</h3>
+                    <p class="mega-menu__link-body">
+                      Watch Talks, Performances and Features from Ableton's
+                      Summit for Music Makers
+                    </p>
+                  </a>
+                </li>
+                <li class="mega-menu__list-item">
+                  <a href="#" class="mega-menu__link"
+                    ><h3 class="mega-menu__link-title">Learning Music</h3>
+                    <p class="mega-menu__link-body">
+                      Learn the fundamentals of music making right in your
+                      browser.
+                    </p></a
+                  >
+                </li>
+                <li class="mega-menu__list-item">
+                  <a href="#" class="mega-menu__link">
+                    <h3 class="mega-menu__link-title">Learning Synths</h3>
+                    <p class="mega-menu__link-body">
+                      Get started with synthesis using a web-based synth and
+                      accompanying lessons.
+                    </p></a
+                  >
+                </li>
+                <li class="mega-menu__list-item">
+                  <a href="#" class="mega-menu__link"
+                    ><h3 class="mega-menu__link-title">Making Music</h3>
+                    <p class="mega-menu__link-body">
+                      Some tips from 74 Creative Strategies for Electronic
+                      Producers.
+                    </p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
 
         <!-- Sub Nav -->
-        <nav class="sub-nav">
+        <nav class="sub-nav headroom">
           <ul class="sub-nav__list">
             <li class="sub-nav__list-item">
               <a href="" class="sub-nav__link text-secondary">About</a>
@@ -542,5 +809,7 @@
         </ul>
       </div>
     </footer>
+
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
